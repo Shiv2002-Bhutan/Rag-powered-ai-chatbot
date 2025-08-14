@@ -52,3 +52,4 @@ The **Google Gemini API** is the backbone of the AI functionality. The `gemini-1
 
 * **Multiple Data Sources**: Extend the system to support additional file types (e.g., DOCX, TXT) and databases.
 * **Multi-Modal RAG**: Integrate Gemini's multi-modal capabilities to handle queries related to images or other non-text data.!
+
