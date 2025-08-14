@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Panel - AI Knowledge Upload</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <h1>📂 AI Backend Data Upload</h1>
+    <p class="notice">
+      ⚠️ AI will have <strong>no knowledge</strong> until you upload data.  
+      Each upload will <strong>replace</strong> the current knowledge base.
+    </p>
+
+    <div id="status" class="status-box">Checking system status...</div>
+
+    <form id="uploadForm">
+      <!-- Data type selection -->
+      <div class="type-selection">
+        <label>
+          <input type="checkbox" id="selectPDF" /> PDF
+        </label>
+        <label>
+          <input type="checkbox" id="selectURL" /> URL
+        </label>
+      </div>
+
+      <!-- PDF Upload -->
+      <div id="pdfSection" class="hidden">
+        <label for="pdfFile">Upload PDF:</label>
+        <input type="file" id="pdfFile" name="pdf" accept="application/pdf" />
+      </div>
+
+      <!-- URL Input -->
+      <div id="urlSection" class="hidden">
+        <label for="urlInput">Enter URL:</label>
+        <input type="url" id="urlInput" name="url" placeholder="https://example.com" />
+      </div>
+
+      <button type="submit" class="submit-btn">🚀 Upload</button>
+      <div id="message"></div>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
